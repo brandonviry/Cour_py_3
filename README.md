@@ -29,7 +29,7 @@ Ceci est un test de BULMA CSS. Comme il n'y a pas de JavaScript, j'ai ajouté jQ
 
 ## Utilisation
 
-Pour accéder au résultat, il suffit de cliquer sur le lien Vercel.
+Pour accéder au résultat, il suffit de cliquer sur ce  lien :[https://brandonviry.github.io/Cour_py_3/src](https://brandonviry.github.io/Cour_py_3/src).
 
 
 ## License
