@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cout python version 1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/atom-one-dark.min.css">
+  <link rel="icon" type="image/png" href="./img/logo.png">
+
+  <style>
+    .language-python {
+      padding: 0.6rem 2rem;
+      background: black;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      transition: all 0.2s;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar is-transparent">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="./img/logo.jpeg" alt="logo">
+
+      </a>
+      <!-- <div class="navbar-burger js-burger" data-target="menueburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div> -->
+    </div>
+
+    <!-- <div id="menueburger" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="#sommaire"> sommaire </a>
+
+        <a class="navbar-item" href="#introduction">Introduction à Python</a>
+        <a class="navbar-item" href="#syntaxe-de-base">Syntaxe de base</a>
+        <a class="navbar-item" href="#structures-de-controle">Structures de contrôle</a>
+        <a class="navbar-item" href="#fonctions">Fonctions</a>
+        <a class="navbar-item" href="#listes-et-tuples">Listes et tuples</a>
+        <a class="navbar-item" href="#dictionnaires-et-ensembles">Dictionnaires et ensembles</a>
+        <a class="navbar-item" href="#programmation-orientee-objet">Programmation orientée objet</a>
+        <a class="navbar-item" href="#modules-et-packages">Modules et packages</a>
+        <a class="navbar-item" href="#entrees-sorties">Entrées/sorties et gestion de fichiers</a>
+        <a class="navbar-item" href="#programmation-fonctionnelle">Programmation fonctionnelle</a>
+        <a class="navbar-item" href="#programmation-asynchrone">Programmation asynchrone</a>
+        <a class="navbar-item" href="#bonnes-pratiques">Bonnes pratiques et optimisation</a>
+        <a class="navbar-item" href="#projets-et-exercices">Projets et exercices</a>
+
+
+      </div>
+    </div> -->
+
+
+    </div>
+    </div>
+  </nav>
+  <section class="section " style="margin:0px;padding: 0px;">
+    <figure class="image">
+      <img src="./img/banner.png" />
+    </figure>
+  </section>
+
+
+  <section class="hero is-small is-link" id="sommaire">
+    <div class="hero-body">
+      <p class="title">SOMMAIRE </p>
+    </div>
+  </section>
+
+
+
+
+  <section class="hero is-small is-info" id="introduction">
+    <div class="hero-body som">
+      <p class="title">Introduction à Python </p>
+      <ul class="subtitle">
+        <li>Historique et popularité de Python</li>
+        <li>Utilisations et applications de Python</li>
+        <li> Environnement de développement et installation de Python</li>
+      </ul>
+    </div>
+  </section>
+
+
+  </section>
+  <section class="section section-content" id="introduction-content">
+    <div class="content">
+
+      <h1>Historique et popularité de Python</h1>
+
+      <p> Python est un langage de programmation de haut niveau, interprété, multiplateforme et open source. Il a été
+        créé par Guido van Rossum en 1991 et est depuis devenu l'un des langages de programmation les plus populaires au
+        monde. Python est connu pour sa syntaxe claire et concise, sa grande bibliothèque standard et sa communauté
+        active.
+      </p>
+      <h1>Utilisations et applications de Python</h1>
+      <p> Python est utilisé dans de nombreux domaines, notamment :</p>
+      <ul>
+        <li> Développement web : Python est utilisé pour créer des sites web et des applications web dynamiques avec des
+          frameworks comme Django, Flask et Pyramid.
+        </li>
+        <li> Intelligence artificielle et apprentissage automatique : Python est devenu le langage de choix pour l'IA et
+          le ML grâce à des bibliothèques comme TensorFlow, Keras et scikit-learn.
+        </li>
+        <li>Analyse de données et science des données : Python est largement utilisé pour l'analyse de données et la
+          visualisation avec des bibliothèques comme NumPy, Pandas et Matplotlib.
+        </li>
+        <li>Développement de logiciels : Python est utilisé pour développer des logiciels de bureau et des applications
+          mobiles avec des outils comme PyQt, Kivy et BeeWare.
+          Programmation système et administration : Python est utilisé pour automatiser des tâches, gérer des fichiers
+          et interagir avec le système d'exploitation.
+        </li>
+        <li>Jeux vidéo : Python est utilisé pour développer des jeux vidéo avec des bibliothèques comme Pygame et
+          Panda3D.
+        </li>
+      </ul>
+
+      <h1>
+        <p>Environnement de développement et installation de Python
+      </h1>
+      Pour commencer à programmer en Python, vous devez installer un environnement de développement et Python lui-même.
+      Voici quelques étapes de base :
+
+      <ol>
+        <li>Téléchargez et installez Python depuis le site officiel : <a
+            href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>
+        </li>
+        <li>Installez un éditeur de texte ou un environnement de développement intégré (IDE) pour écrire et exécuter du
+          code Python. Quelques options populaires incluent Visual Studio Code, PyCharm, et Atom.
+        </li>
+        <li>Configurez votre environnement de développement pour qu'il reconnaisse Python. Cela peut varier en fonction
+          de l'éditeur ou de l'IDE que vous utilisez.
+        </li>
+      </ol>
+      <p>
+        Une fois que vous avez installé Python et configuré votre environnement de développement, vous êtes prêt à
+        commencer à apprendre et à écrire du code Python.
+      <p>
+        La première partie du cours vous a donné une introduction à Python, son histoire, ses utilisations, et comment
+        installer l'environnement de développement et Python lui-même. Dans la prochaine partie, nous aborderons la
+        syntaxe de base de Python.
+      </p>
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="syntaxe-de-base">
+    <div class="hero-body som">
+      <p class="title">Syntaxe de base</p>
+      <ul class="subtitle">
+        <li> Commentaires et indentation</li>
+        <li>Variables et types de données (int, float, bool, str, list, tuple, dict, set)</li>
+        <li>Opérateurs arithmétiques et logiques</li>
+        <li>Entrées et sorties (input, print)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="syntaxe-de-base-content">
+    <div class="content">
+      <h2>Commentaires et indentation</h2>
+      <p>Les commentaires en Python sont utilisés pour expliquer le code et sont ignorés lors de l'exécution. Un
+        commentaire commence par le caractère '#' et se poursuit jusqu'à la fin de la ligne.</p>
+      <pre><code class="language-python"># Ceci est un commentaire</code></pre>
+      <p>L'indentation en Python est utilisée pour définir les blocs de code. Contrairement à d'autres langages qui
+        utilisent des accolades ou des mots-clés, Python utilise des espaces pour indiquer le début et la fin des blocs
+        de code. Il est important de maintenir une indentation cohérente pour éviter les erreurs.</p>
+      <pre><code class="language-python">if condition:
+        # Indentation pour le code de la condition
+        print("La condition est vraie")</code></pre>
+
+      <h2>Variables et types de données</h2>
+      <p>En Python, vous pouvez stocker des valeurs dans des variables. Les types de données courants en Python sont :
+      </p>
+      <ul>
+        <li><code>int</code> : entiers (par exemple, 1, 2, 3)</li>
+        <li><code>float</code> : nombres à virgule flottante (par exemple, 1.5, 2.2, 3.14)</li>
+        <li><code>bool</code> : booléens (True, False)</li>
+        <li><code>str</code> : chaînes de caractères (par exemple, "bonjour", 'hello')</li>
+        <li><code>list</code> : listes (par exemple, [1, 2, 3])</li>
+        <li><code>tuple</code> : tuples (par exemple, (1, 2, 3))</li>
+        <li><code>dict</code> : dictionnaires (par exemple, {"clé": "valeur"})</li>
+        <li><code>set</code> : ensembles (par exemple, {1, 2, 3})</li>
+      </ul>
+      <p>Voici quelques exemples de déclaration de variables et d'affectation de valeurs :</p>
+      <pre><code class="language-python">
+    x = 1  # x est un entier (int)
+    y = 3.14  # y est un nombre à virgule flottante (float)
+    z = "bonjour"  # z est une chaîne de caractères (str)</code></pre>
+
+      <h2>Opérateurs arithmétiques et logiques</h2>
+      <p>Python prend en charge les opérateurs arithmétiques et logiques. Voici quelques-uns des opérateurs courants :
+      </p>
+      <ul>
+        <li>Opérateurs arithmétiques : <code>+</code> (addition), <code>-</code> (soustraction), <code>*</code>
+          (multiplication), <code>/</code> (division), <code>%</code> (modulo), <code>**</code> (exponentiation)</li>
+        <li>Opérateurs de comparaison : <code>==</code> (égalité), <code>!=</code> (inégalité), <code>></code>
+          (supérieur), <code><</code> (inférieur), <code>>=</code> (supérieur ou égal), <code><=</code> (inférieur ou
+          égal)</li>
+        <li>Opérateurs logiques : <code>and</code> (et), <code>or</code> (ou), <code>not</code> (non)</li>
+      </ul>
+      <pre><code class="language-python">
+    x = 2 + 3  # x est égal à 5
+    y = x > 4   # y est égal à True
+    z = y and x  # z est égal à 5</code></pre>
+
+      <h2>Entrées et sorties</h2>
+      <p>Les fonctions <code>input()</code> et <code>print()</code> sont utilisées pour les entrées et les sorties en
+        Python. <code>input()</code> permet à l'utilisateur de saisir une valeur et <code>print()</code> affiche des
+        données à l'écran.</p>
+      <pre><code class="language-python">
+    nom = input("Entrez votre nom : ")  # L'utilisateur saisit son nom
+    print("Bonjour", nom)  # Affiche "Bonjour" suivi du nom saisi</code></pre>
+
+      <p>La deuxième partie du cours vous a présenté la syntaxe de base de Python, notamment les commentaires et
+        l'indentation, les variables et les types de données, les opérateurs arithmétiques et logiques, et les fonctions
+        d'entrée et de sortie. Dans la prochaine partie, nous aborderons les structures de contrôle en Python.</p>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="hero is-small is-info" id="structures-de-controle">
+    <div class="hero-body som">
+      <h1 class="title">Structures de contrôle</h1>
+      <ul class="subtitle">
+        <li>Conditions (if, else, elif)</li>
+        <li>Boucles (for, while)</li>
+        <li>Gestion des exceptions (try, except, finally)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="structures-de-controle-content">
+    <div class="content">
+
+      <h2>Conditions</h2>
+      <p>Les conditions en Python sont utilisées pour exécuter différents blocs de code en fonction de la valeur de
+        certaines expressions. Les conditions sont définies à l'aide des mots-clés <code>if</code>, <code>elif</code>
+        (pour "else if") et <code>else</code>.</p>
+      <pre><code class="language-python">
+  age = 18
+  if age &lt; 18:
+      print("Vous êtes mineur.")
+  elif age &lt; 65:
+      print("Vous êtes majeur.")
+  else:
+      print("Vous êtes senior.")
+  </code></pre>
+
+      <h2>Boucles</h2>
+      <p>Les boucles en Python sont utilisées pour exécuter un bloc de code plusieurs fois. Il existe deux types de
+        boucles : <code>for</code> et <code>while</code>.</p>
+      <p>La boucle <code>for</code> itère sur une séquence (par exemple, une liste, une chaîne de caractères, un tuple)
+        et exécute le bloc de code pour chaque élément de la séquence.</p>
+      <pre><code class="language-python">
+  fruits = ["pomme", "banane", "orange"]
+  for fruit in fruits:
+      print("J'aime manger des", fruit)
+  </code></pre>
+      <p>La boucle <code>while</code> exécute un bloc de code tant qu'une condition est vraie.</p>
+      <pre><code class="language-python">
+  i = 0
+  while i &lt; 5:
+      print(i)
+      i += 1
+  </code></pre>
+
+      <h2>Gestion des exceptions</h2>
+      <p>Les exceptions en Python sont utilisées pour gérer les erreurs et les situations imprévues. La structure
+        <code>try</code>, <code>except</code> et <code>finally</code> est utilisée pour gérer les exceptions.
+      </p>
+      <pre><code class="language-python">
+  try:
+      # Code susceptible de générer une exception
+      result = 10 / 0
+  except ZeroDivisionError:
+      # Code à exécuter si une exception ZeroDivisionError est levée
+      print("Erreur : division par zéro.")
+  else:
+      # Code à exécuter si aucune exception n'est levée
+      print("Le résultat est", result)
+  finally:
+      # Code à exécuter indépendamment du fait qu'une exception soit levée ou non
+      print("Fin de la gestion des exceptions.")
+  </code></pre>
+
+      <p>La troisième partie du cours vous a présenté les structures de contrôle en Python, notamment les conditions,
+        les boucles et la gestion des exceptions. Ces structures sont essentielles pour contrôler le flux d'exécution de
+        votre programme. Dans la prochaine partie, nous aborderons les fonctions en Python.</p>
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="fonctions">
+    <div class="hero-body som">
+      <h1 class="title">Fonctions</h1>
+      <ul class="subtitle">
+        <li>Définition de fonctions (def)</li>
+        <li>Arguments et paramètres</li>
+        <li>Portée des variables (global, local)</li>
+        <li>Fonctions built-in (len, max, min, sum, etc.)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="fonctions-content">
+    <div class="content">
+
+
+      <h2>Définition de fonctions</h2>
+      <p>Une fonction en Python est un bloc de code réutilisable qui effectue une tâche spécifique. Les fonctions sont
+        définies à l'aide du mot-clé <code>def</code>.</p>
+      <pre><code class="language-python">def saluer(nom):
+    print("Bonjour", nom)
+</code></pre>
+
+      <h2>Arguments et paramètres</h2>
+      <p>Les fonctions peuvent accepter des arguments (ou paramètres) qui sont utilisés dans le corps de la fonction.
+        Les arguments peuvent être de n'importe quel type de données et peuvent être nombreux, séparés par des virgules.
+      </p>
+      <pre><code class="language-python">def additionner(a, b):
+    return a + b
+</code></pre>
+
+      <h2>Portée des variables</h2>
+      <p>En Python, les variables ont une portée locale ou globale. Les variables définies à l'intérieur d'une fonction
+        sont locales et ne sont accessibles qu'à l'intérieur de cette fonction. Les variables définies en dehors d'une
+        fonction sont globales et peuvent être utilisées partout dans le programme.</p>
+      <pre><code class="language-python">x = 10  # Variable globale
+
+def fonction():
+    y = 20  # Variable locale
+    print(x, y)  # Affiche 10, 20
+
+fonction()
+print(x, y)  # Affiche 10, erreur car y n'est pas défini en dehors de la fonction
+</code></pre>
+
+      <h2>Fonctions built-in</h2>
+      <p>Python fournit de nombreuses fonctions intégrées (built-in) pour effectuer des tâches courantes. Quelques
+        exemples incluent <code>len()</code>, <code>max()</code>, <code>min()</code>, <code>sum()</code>,
+        <code>print()</code>, <code>input()</code>, etc.
+      </p>
+      <pre><code class="language-python">liste = [1, 2, 3, 4, 5]
+print(len(liste))  # Affiche 5
+print(max(liste))  # Affiche 5
+print(min(liste))  # Affiche 1
+print(sum(liste))  # Affiche 15
+</code></pre>
+
+      <p>La quatrième partie du cours vous a présenté les fonctions en Python, notamment leur définition, les arguments
+        et la portée des variables, ainsi que les fonctions built-in. Les fonctions sont un élément clé de la
+        programmation Python et permettent de structurer et d'organiser votre code. Dans la prochaine partie, nous
+        aborderons les listes et les tuples en Python.</p>
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="listes-et-tuples">
+    <div class="hero-body som">
+      <h1 class="title">Listes et tuples</h1>
+      <ul class="subtitle">
+        <li>Création et manipulation de listes et tuples</li>
+        <li>Slicing et indexation</li>
+        <li>Fonctions built-in pour les listes et tuples (append, extend, insert, remove, etc.)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-content" id="listes-et-tuples-content">
+    <div class="content">
+
+
+      <h2>Création et manipulation de listes et tuples</h2>
+      <p>Les listes et les tuples en Python sont des structures de données ordonnées et modifiables (listes) ou non
+        modifiables (tuples) qui peuvent contenir des éléments de différents types.</p>
+      <pre><code class="language-python">liste = [1, 2, 3, 4, 5]
+tuple = (1, 2, 3, 4, 5)
+</code></pre>
+
+      <h2>Slicing et indexation</h2>
+      <p>Le slicing et l'indexation permettent d'accéder à des éléments spécifiques dans une liste ou un tuple.
+        L'indexation commence à 0, donc le premier élément d'une liste ou d'un tuple est à l'index 0.</p>
+      <pre><code class="language-python">liste = [1, 2, 3, 4, 5]
+print(liste[0])  # Affiche 1 (premier élément de la liste)
+print(liste[2:4])  # Affiche [3, 4] (troisième et quatrième éléments de la liste)
+</code></pre>
+
+      <h2>Fonctions built-in pour les listes et tuples</h2>
+      <p>Python fournit de nombreuses fonctions built-in pour manipuler les listes et les tuples. Quelques exemples
+        incluent <code>append()</code>, <code>extend()</code>, <code>insert()</code>, <code>remove()</code>,
+        <code>index()</code>, <code>count()</code>, etc.
+      </p>
+      <pre><code class="language-python">liste = [1, 2, 3, 4, 5]
+liste.append(6)  # Ajoute 6 à la fin de la liste
+liste.extend([7, 8])  # Ajoute [7, 8] à la fin de la liste
+liste.insert(2, 9)  # Insère 9 à l'index 2 de la liste
+liste.remove(3)  # Supprime le premier élément 3 de la liste
+print(liste.index(4))  # Affiche 3 (index du premier élément 4 dans la liste)
+print(liste.count(5))  # Affiche 1 (nombre d'occurrences de 5 dans la liste)
+</code></pre>
+
+      <p>La cinquième partie du cours vous a présenté les listes et les tuples en Python, notamment leur création et
+        manipulation, le slicing et l'indexation, ainsi que les fonctions built-in pour les listes et les tuples. Les
+        listes et les tuples sont des structures de données essentielles en Python et sont utilisées dans de nombreux
+        contextes. Dans la prochaine partie, nous aborderons les dictionnaires et les ensembles en Python.</p>
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="dictionnaires-et-ensembles">
+    <div class="hero-body som">
+      <h1 class="title">Dictionnaires et ensembles</h1>
+      <ul class="subtitle">
+        <li>Création et manipulation de dictionnaires et ensembles</li>
+        <li>Accès aux éléments et itération</li>
+        <li>Fonctions built-in pour les dictionnaires et ensembles (keys, values, items, etc.)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-content" id="dictionnaires-et-ensembles-content">
+    <div class="content">
+
+      <h2>Création et manipulation de dictionnaires et ensembles</h2>
+      <p>Les dictionnaires et les ensembles en Python sont des structures de données non ordonnées et modifiables qui
+        contiennent des éléments de différents types. Les dictionnaires sont constitués de paires clé-valeur, tandis que
+        les ensembles ne contiennent que des valeurs uniques.</p>
+      <pre><code class="language-python">dictionnaire = {"clé1": "valeur1", "clé2": "valeur2"}
+ensemble = {1, 2, 3, 4, 5}
+</code></pre>
+
+      <h2>Accès aux éléments et itération</h2>
+      <p>Les dictionnaires et les ensembles permettent d'accéder à des éléments spécifiques et d'itérer sur leurs
+        éléments.</p>
+      <pre><code class="language-python">dictionnaire = {"clé1": "valeur1", "clé2": "valeur2"}
+print(dictionnaire["clé1"])  # Affiche "valeur1"
+
+ensemble = {1, 2, 3, 4, 5}
+for element in ensemble:
+    print(element)  # Affiche 1, 2, 3, 4, 5
+</code></pre>
+
+      <h2>Fonctions built-in pour les dictionnaires et ensembles</h2>
+      <p>Python fournit de nombreuses fonctions built-in pour manipuler les dictionnaires et les ensembles. Quelques
+        exemples incluent <code>keys()</code>, <code>values()</code>, <code>items()</code>, <code>add()</code>,
+        <code>remove()</code>, <code>update()</code>, <code>pop()</code>, etc.
+      </p>
+      <pre><code class="language-python">dictionnaire = {"clé1": "valeur1", "clé2": "valeur2"}
+print(dictionnaire.keys())  # Affiche dict_keys(['clé1', 'clé2'])
+print(dictionnaire.values())  # Affiche dict_values(['valeur1', 'valeur2'])
+print(dictionnaire.items())  # Affiche dict_items([('clé1', 'valeur1'), ('clé2', 'valeur2')])
+
+ensemble = {1, 2, 3, 4, 5}
+ensemble.add(6)  # Ajoute 6 à l'ensemble
+ensemble.remove(3)  # Supprime 3 de l'ensemble
+
+dictionnaire.update({"clé3": "valeur3"})  # Ajoute la paire clé-valeur "clé3": "valeur3" au dictionnaire
+valeur = dictionnaire.pop("clé1")  # Supprime la paire clé-valeur "clé1": "valeur1" du dictionnaire et renvoie "valeur1"
+</code></pre>
+
+      <p>La sixième partie du cours vous a présenté les dictionnaires et les ensembles en Python, notamment leur
+        création et manipulation, l'accès aux éléments et l'itération, ainsi que les fonctions built-in pour les
+        dictionnaires et les ensembles. Les dictionnaires et les ensembles sont des structures de données puissantes en
+        Python et sont utilisées dans de nombreux contextes. Dans la prochaine partie, nous aborderons la programmation
+        orientée objet en Python.</p>
+
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="programmation-orientee-objet">
+    <div class="hero-body som">
+      <h1 class="title">Programmation orientée objet</h1>
+      <ul class="subtitle">
+        <li>Création de classes et d'objets</li>
+        <li>Attributs et méthodes</li>
+        <li>Héritage et polymorphisme</li>
+        <li>Méthodes spéciales (init, str, etc.)</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="programmation-orientee-objet-content">
+    <div class="content">
+
+
+      <h2>Création de classes et d'objets</h2>
+      <p>La programmation orientée objet (POO) en Python permet de créer des classes et des objets. Les classes sont des
+        modèles à partir desquels les objets sont créés. Les objets sont des instances de classes.</p>
+      <pre><code class="language-python">class Animal:
+    def __init__(self, nom, espece):
+        self.nom = nom
+        self.espece = espece
+
+    def se_presenter(self):
+        print("Je suis", self.nom, "et je suis un", self.espece)
+
+mon_animal = Animal("Fido", "chien")
+mon_animal.se_presenter()  # Affiche "Je suis Fido et je suis un chien"
+</code></pre>
+
+      <h2>Attributs et méthodes</h2>
+      <p>Les attributs sont des variables associées à une classe ou un objet, et les méthodes sont des fonctions
+        associées à une classe ou un objet.</p>
+      <pre><code class="language-python">class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def dire_bonjour(self):
+        print("Bonjour, je m'appelle", self.nom)
+
+moi = Personne("Alice", 30)
+moi.dire_bonjour()  # Affiche "Bonjour, je m'appelle Alice"
+</code></pre>
+
+      <h2>Héritage et polymorphisme</h2>
+      <p>L'héritage permet de créer de nouvelles classes à partir de classes existantes. Le polymorphisme permet
+        d'utiliser des méthodes de différentes classes de la même manière.</p>
+      <pre><code class="language-python">class Animal:
+    def __init__(self, nom):
+        self.nom = nom
+
+    def dire_bonjour(self):
+        print("Bonjour, je suis", self.nom)
+
+class Chien(Animal):
+    def dire_bonjour(self):
+        print("Wouf ! Je suis", self.nom)
+
+mon_animal = Chien("Fido")
+mon_animal.dire_bonjour()  # Affiche "Wouf ! Je suis Fido"
+</code></pre>
+
+      <h2>Méthodes spéciales</h2>
+      <p>Les méthodes spéciales en Python commencent et se terminent par des doubles underscores (__). Quelques exemples
+        incluent <code>__init__</code>, <code>__str__</code>, <code>__repr__</code>, etc.</p>
+      <pre><code class="language-python">class Personne:
+    def __init__(self, nom, age):
+        self.nom = nom
+        self.age = age
+
+    def __str__(self):
+        return "Personne(nom={}, age={})".format(self.nom, self.age)
+
+moi = Personne("Alice", 30)
+print(moi)  # Affiche "Personne(nom=Alice, age=30)"
+</code></pre>
+
+      <p>La septième partie du cours vous a présenté la programmation orientée objet en Python, notamment la création de
+        classes et d'objets, les attributs et les méthodes, l'héritage et le polymorphisme, ainsi que les méthodes
+        spéciales. La POO est un paradigme de programmation puissant qui permet de structurer et d'organiser votre code.
+        Dans la prochaine partie, nous aborderons les modules et les packages en Python.</p>
+
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="modules-et-packages">
+    <div class="hero-body som">
+      <h1 class="title">Modules et packages</h1>
+      <ul class="subtitle">
+        <li>Importation et utilisation de modules</li>
+        <li>Création de modules et packages personnalisés</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="modules-et-packages-content">
+    <div class="content">
+
+
+      <h2>Importation et utilisation de modules</h2>
+      <p>Les modules en Python sont des fichiers qui contiennent des définitions et des déclarations. Les packages sont
+        des dossiers qui contiennent des modules. L'importation d'un module permet d'utiliser ses définitions et
+        déclarations dans votre code.</p>
+      <pre><code class="language-python">import math
+
+print(math.pi)  # Affiche la valeur de pi
+</code></pre>
+
+      <h2>Création de modules et packages personnalisés</h2>
+      <p>Vous pouvez créer vos propres modules et packages en Python. Pour créer un module, créez simplement un fichier
+        Python avec les définitions et déclarations que vous souhaitez utiliser. Pour créer un package, créez un dossier
+        contenant des modules.</p>
+      <pre><code class="language-python"># module1.py
+def fonction1():
+    print("Fonction 1 du module 1")
+
+# module2.py
+def fonction2():
+    print("Fonction 2 du module 2")
+
+# package1/module3.py
+def fonction3():
+    print("Fonction 3 du module 3 dans le package 1")
+</code></pre>
+
+      <p>La huitième partie du cours vous a présenté les modules et les packages en Python, notamment leur importation
+        et utilisation, ainsi que la création de modules et packages personnalisés. Les modules et packages permettent
+        de structurer et d'organiser votre code en unités réutilisables. Dans la prochaine partie, nous aborderons les
+        entrées/sorties et la gestion de fichiers en Python.</p>
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="entrees-sorties">
+    <div class="hero-body som">
+      <h1 class="title">Entrées/sorties et gestion de fichiers</h1>
+      <ul class="subtitle">
+        <li>Lecture et écriture de fichiers</li>
+        <li>Manipulation de fichiers et de dossiers</li>
+        <li>Gestion des erreurs d'entrée/sortie</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-content"  id="entrees-sorties-content">
+    <div class="content">
+
+      <h2>Lecture et écriture de fichiers</h2>
+      <p>En Python, vous pouvez lire et écrire dans des fichiers en utilisant les modes 'r' (lecture), 'w' (écriture),
+        'a' (ajout), et 'r+' (lecture et écriture).</p>
+      <pre><code class="language-python">
+  # Écriture dans un fichier
+  with open("fichier.txt", "w") as fichier:
+      fichier.write("Ceci est un exemple d'écriture dans un fichier.\n")
+  
+  # Lecture d'un fichier
+  with open("fichier.txt", "r") as fichier:
+      contenu = fichier.read()
+      print(contenu)
+  </code></pre>
+
+      <h2>Manipulation de fichiers et de dossiers</h2>
+      <p>Le module <code>os</code> en Python fournit des fonctions pour manipuler des fichiers et des dossiers.</p>
+      <pre><code class="language-python">
+  import os
+  
+  # Création d'un dossier
+  os.mkdir("nouveau_dossier")
+  
+  # Suppression d'un fichier
+  os.remove("fichier.txt")
+  
+  # Renommage d'un fichier
+  os.rename("fichier.txt", "nouveau_nom.txt")
+  
+  # Vérification de l'existence d'un fichier ou d'un dossier
+  if os.path.exists("fichier.txt"):
+      print("Le fichier existe.")
+  else:
+      print("Le fichier n'existe pas.")
+  </code></pre>
+
+      <h2>Gestion des erreurs d'entrée/sortie</h2>
+      <p>Il est important de gérer les erreurs d'entrée/sortie (IOErrors) en Python.</p>
+      <pre><code class="language-python">
+  try:
+      with open("fichier.txt", "r") as fichier:
+          contenu = fichier.read()
+  except IOError as e:
+      print("Une erreur d'entrée/sortie s'est produite :", e)
+  </code></pre>
+
+      <p>La neuvième partie du cours vous a présenté les entrées/sorties et la gestion de fichiers en Python, notamment
+        la lecture et l'écriture de fichiers, la manipulation de fichiers et de dossiers, ainsi que la gestion des
+        erreurs d'entrée/sortie. La gestion des fichiers est une compétence essentielle pour tout développeur Python.
+        Dans la prochaine partie, nous aborderons la programmation fonctionnelle en Python.</p>
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="programmation-fonctionnelle">
+    <div class="hero-body som">
+      <h1 class="title">Programmation fonctionnelle</h1>
+      <ul class="subtitle">
+        <li>Fonctions lambda</li>
+        <li>Compréhensions de listes, dictionnaires et ensembles</li>
+        <li>Fonctions map, filter et reduce</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content" id="programmation-fonctionnelle-content">
+    <div class="content">
+
+
+      <h2>Fonctions lambda</h2>
+      <p>Les fonctions lambda en Python sont des fonctions anonymes à une seule expression. Elles sont utiles pour créer
+        des fonctions simples et courtes.</p>
+      <pre><code class="language-python">
+double = lambda x: x * 2
+print(double(5))  # Affiche 10
+</code></pre>
+
+      <h2>Compréhensions de listes, dictionnaires et ensembles</h2>
+      <p>Les compréhensions en Python sont des expressions qui permettent de créer des listes, des dictionnaires et des
+        ensembles en une seule ligne de code.</p>
+      <pre><code class="language-python"># Compréhension de liste
+liste = [x * 2 for x in range(5)]
+print(liste)  # Affiche [0, 2, 4, 6, 8]
+
+# Compréhension de dictionnaire
+dictionnaire = {x: x * 2 for x in range(5)}
+print(dictionnaire)  # Affiche {0: 0, 1: 2, 2: 4, 3: 6, 4: 8}
+
+# Compréhension d'ensemble
+ensemble = {x * 2 for x in range(5)}
+print(ensemble)  # Affiche {0, 2, 4, 6, 8}
+</code></pre>
+
+      <h2>Fonctions map, filter et reduce</h2>
+      <p>Les fonctions <code>map()</code>, <code>filter()</code> et <code>reduce()</code> en Python permettent de
+        manipuler des listes et des itérables de manière fonctionnelle.</p>
+      <pre><code class="language-python"># map()
+liste = [1, 2, 3, 4, 5]
+liste_doublee = list(map(lambda x: x * 2, liste))
+print(liste_doublee)  # Affiche [2, 4, 6, 8, 10]
+
+# filter()
+liste = [1, 2, 3, 4, 5]
+liste_paires = list(filter(lambda x: x % 2 == 0, liste))
+print(liste_paires)  # Affiche [2, 4]
+
+# reduce()
+from functools import reduce
+liste = [1, 2, 3, 4, 5]
+somme = reduce(lambda x, y: x + y, liste)
+print(somme)  # Affiche 15
+</code></pre>
+
+      <p>La dixième partie du cours vous a présenté la programmation fonctionnelle en Python, notamment les fonctions
+        lambda, les compréhensions de listes, de dictionnaires et d'ensembles, ainsi que les fonctions
+        <code>map()</code>, <code>filter()</code> et <code>reduce()</code>. La programmation fonctionnelle est un
+        paradigme de programmation puissant qui permet de créer des fonctions pures et de manipuler des données de
+        manière efficace. Dans la prochaine partie, nous aborderons la programmation asynchrone en Python.
+      </p>
+
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="programmation-asynchrone">
+    <div class="hero-body som">
+      <h1 class="title">Programmation asynchrone</h1>
+      <ul class="subtitle">
+        <li>Coroutines et générateurs</li>
+        <li>asyncio et programmation concurrente</li>
+      </ul>
+    </div>
+  </section>
+  <section class="section section-content"  id="programmation-asynchrone-content">
+    <div class="content">
+
+
+      <h2>Coroutines et générateurs</h2>
+      <p>Les coroutines et les générateurs en Python sont des fonctions spéciales qui peuvent être suspendues et
+        reprises à des points spécifiques. Les coroutines sont des fonctions asynchrones qui peuvent être utilisées pour
+        écrire du code asynchrone.</p>
+      <pre><code class="language-python">
+import asyncio
+
+async def factorielle(n):
+    resultat = 1
+    for i in range(1, n + 1):
+        await asyncio.sleep(0)
+        resultat *= i
+    return resultat
+
+async def main():
+    print("Calcul de la factorielle de 5 :", await factorielle(5))
+
+asyncio.run(main())
+</code></pre>
+
+      <h2>asyncio et programmation concurrente</h2>
+      <p>Le module <code>asyncio</code> en Python fournit des outils pour écrire du code asynchrone et concurrent. Il
+        est particulièrement utile pour les applications réseau et les applications qui doivent gérer plusieurs tâches
+        en parallèle.</p>
+      <pre><code class="language-python">
+import asyncio
+
+async def tache1():
+    print("Début de la tâche 1")
+    await asyncio.sleep(1)
+    print("Fin de la tâche 1")
+
+async def tache2():
+    print("Début de la tâche 2")
+    await asyncio.sleep(2)
+    print("Fin de la tâche 2")
+
+async def main():
+    await asyncio.gather(tache1(), tache2())
+
+asyncio.run(main())
+</code></pre>
+
+      <p>La onzième partie du cours vous a présenté la programmation asynchrone en Python, notamment les coroutines et
+        les générateurs, ainsi que le module <code>asyncio</code> et la programmation concurrente. La programmation
+        asynchrone est un paradigme de programmation puissant qui permet d'écrire du code efficace pour les applications
+        réseau et les applications qui doivent gérer plusieurs tâches en parallèle. Dans la prochaine partie, nous
+        aborderons les bonnes pratiques et l'optimisation en Python.</p>
+
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="bonnes-pratiques">
+    <div class="hero-body som">
+      <h1 class="title">Bonnes pratiques et optimisation</h1>
+      <ul class="subtitle">
+        <li>Style de code et conventions de nommage</li>
+        <li>Documentation et tests</li>
+        <li>Optimisation des performances (profiling, caching, etc.)</li>
+        <li>Utilisation de bibliothèques populaires (NumPy, Pandas, Matplotlib, etc.)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-content" id="bonnes-pratiques-content">
+    <div class="content">
+
+      <h2>Style de code et conventions de nommage</h2>
+      <p>En Python, il est important de suivre les bonnes pratiques de style de code et de conventions de nommage. Le
+        guide de style officiel de Python, PEP 8, fournit des recommandations pour écrire du code Python lisible et
+        maintenable.</p>
+      <pre><code class="language-python">
+  # Exemple de code PEP 8
+  def factorielle(n):
+      resultat = 1
+      for i in range(1, n + 1):
+          resultat *= i
+      return resultat
+  
+  # Appel de la fonction
+  print(factorielle(5))
+  </code></pre>
+
+      <h2>Documentation et tests</h2>
+      <p>La documentation et les tests sont essentiels pour écrire du code Python de qualité. La documentation peut être
+        écrite en utilisant les commentaires et les docstrings, et les tests peuvent être écrits en utilisant des
+        frameworks de test comme unittest et pytest.</p>
+      <pre><code class="language-python">
+    def factorielle(n):
+            """Calcule la factorielle de n.
+        
+            Args:
+                n (int): Le nombre dont on veut calculer la factorielle.
+        
+            Returns:
+                int: La factorielle de n.
+            """
+            resultat = 1
+            for i in range(1, n + 1):
+                resultat *= i
+            return resultat
+        
+      # Test de la fonction
+      assert factorielle(5) == 120
+  </code></pre>
+
+      <h2>Optimisation des performances</h2>
+      <p>L'optimisation des performances en Python peut être réalisée en utilisant des techniques telles que le
+        profilage, le caching, et l'utilisation de bibliothèques optimisées.</p>
+      <pre><code class="language-python">
+  # Profilage avec cProfile
+  import cProfile
+  
+  def factorielle(n):
+      resultat = 1
+      for i in range(1, n + 1):
+          resultat *= i
+      return resultat
+  
+  cProfile.run('factorielle(5)')
+  </code></pre>
+
+      <h2>Utilisation de bibliothèques populaires</h2>
+      <p>L'utilisation de bibliothèques populaires en Python peut améliorer les performances et la maintenabilité de
+        votre code. Quelques exemples de bibliothèques populaires incluent NumPy, Pandas, Matplotlib, etc.</p>
+      <pre><code class="language-python">
+  import numpy as np
+  
+  def factorielle(n):
+      resultat = np.arange(1, n + 1)
+      np.cumprod(resultat, out=resultat)
+      return resultat[-1]
+  
+  print(factorielle(5))
+  </code></pre>
+
+      <p>La douzième partie du cours vous a présenté les bonnes pratiques et l'optimisation en Python, notamment le
+        style de code et les conventions de nommage, la documentation et les tests, l'optimisation des performances, et
+        l'utilisation de bibliothèques populaires. En suivant ces bonnes pratiques, vous pouvez écrire du code Python de
+        qualité, performant et maintenable. Dans la prochaine partie, nous aborderons les projets et les exercices en
+        Python.</p>
+
+
+    </div>
+  </section>
+
+  <section class="hero is-small is-info" id="projets-et-exercices">
+    <div class="hero-body som">
+      <h1 class="title">Projets et exercices</h1>
+      <ul class="subtitle">
+        <li>Développement de projets pour mettre en pratique les concepts appris</li>
+        <li>Exercices pour renforcer les compétences en programmation Python</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-content" id="projets-et-exercices-content">
+    <div class="content">
+
+
+      <h2>Développement de projets</h2>
+      <p>Le développement de projets en Python est un excellent moyen de mettre en pratique les concepts appris et de
+        développer vos compétences en programmation. Voici quelques idées de projets :</p>
+      <ul>
+        <li>Application web simple avec Flask ou Django</li>
+        <li>Script d'automatisation pour une tâche répétitive</li>
+        <li>Jeu simple avec Pygame</li>
+        <li>Analyse de données avec NumPy et Pandas</li>
+        <li>Application mobile avec Kivy</li>
+      </ul>
+
+      <h2>Exercices</h2>
+      <p>Les exercices sont un autre moyen efficace de développer vos compétences en Python. Voici quelques exemples
+        d'exercices :</p>
+      <ul>
+        <li>Écrire une fonction qui calcule la moyenne d'une liste de nombres.</li>
+        <li>Écrire une fonction qui trie une liste de chaînes de caractères par ordre alphabétique.</li>
+        <li>Écrire une fonction qui compte le nombre d'occurrences d'un élément dans une liste.</li>
+        <li>Écrire un script qui télécharge et affiche le contenu d'une page web.</li>
+      </ul>
+
+      <p>La treizième partie du cours vous a présenté les projets et les exercices en Python. En développant des projets
+        et en réalisant des exercices, vous pouvez mettre en pratique les concepts appris et développer vos compétences
+        en programmation Python. Dans la prochaine partie, nous aborderons la programmation réseau et web en Python.</p>
+
+
+    </div>
+  </section>
+
+
+  <footer class="footer is-small">
+    <div class="content has-text-centered ">
+      <p>
+        <strong>Crée </strong> par <a href="https://www.linkedin.com/in/brandon-viry-81187b237/">VIRY Brandon</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+
+</html>
