@@ -9,8 +9,19 @@ $(".section-content").hide();
 $(document).ready(function () {
   $(".hero").click((e) => {
     $("#" + $(e.currentTarget).attr("id") + "-content").toggle();
+
+    let btn = $(e.currentTarget).find("button");
+    if (btn.attr("id") == "false") {
+      btn.attr("id", "true");
+      btn.text(" >>> FERMER LA PARTIE <<< ");
+    } else {
+      btn.text(" >>> OUVRIR LA PARTIE <<< ");
+      btn.attr("id", "false");
+    }
+
   });
-  $(".som ").append(
-    '<button class="button  p-2 is-outlined"> >>> OUVRIR LA PARTIE <<< </button>'
+
+  $(".som").append(
+    '<button class="button p-2 is-outlined" id="false"> >>> OUVRIR LA PARTIE <<< </button>'
   );
 });
